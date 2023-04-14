@@ -4,62 +4,52 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
-	<form action="action_page.php" style="border:1px solid #ccc">
-  <div class="container">
-    <h1>Sign Up</h1>
-    <p>Please fill in this form to create an account.</p>
-    <hr>
+</head>
+	
+	<form method="post">
+  
     <label for="name"><b>Name*</b></label>
-    <input type="text" placeholder="Enter Name" name="name" required>
+    <input type="text" placeholder="Enter Name" id="name" required>
 
     <label for="email"><b>Email*</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-
+    <input type="text" placeholder="Enter Email" id="email" required>
+ <div>
     <label for="male">Male</label>
-<input type="radio" id="male" name="gender" value="m">
+    <input type="radio" id="male" name="gender" value="m">
 
-	  <label for="female">female</label>
-<input type="radio" id="female" name="gender" value="f">
-	  
-	  <label for="other">other</label>
-<input type="radio" id="other" name="gender" value="oth">
-	  <br> </br>
+    <label for="female">female</label>
+    <input type="radio" id="female" name="gender" value="f">
+	  </div>
 
-		  <label for="Car"><b>Choose Your Car*</b></label>
-	 <input type="text" placeholder="Choose Your Car" name="Choose Your Car" required>
-   <select name="cars" id="cars">
+	 <label for="Cars"><b>Choose Your Car*</b></label>
+	 <select id="Cars" required>
+  <option value="" disable selected>--please choose an option--</option> 
   <option value="BMW">BMW</option>
   <option value="Audi">Audi</option>
   <option value="Mercedes">Mercedes</option>
 </select>
-<br> 
-  </br>
+
 	  <label for="age"><b>Age*</b></label>
-    <input type="text" placeholder="Enter Age" name="age" required>
+      <input type="number" placeholder="Enter Age" required>
 
-<label for="dob">Date of birth*</label>
-<input type="date" id="dob" name="dateofbirth" required>
-	  <br></br>
+     <label for="dob">Date of birth*</label>
+     <input type="date" id="dob" required>
 
- <label for="Phone Number"><b>Phone Number*</b></label>
-    <input type="text" placeholder="xxx-xxx-xxxx" name="Phone Number" required>
+     <label for="tel"><b>Phone Number*</b></label>
+     <input type="tel" id="tel" placeholder="xxx-xxx-xxxx"  required>
 
-	  <label for="Password"><b>Password</b>
-	  <input type="password" placeholder="Enter Password">
-       <button>Submit</button>
+	 <label for="Password"><b>Password</b></label>
+	 <input type="password" id="password" placeholder="Enter Password">
+     <button>Submit</button>
 
-    <p>I agree to <a href="#" style="color:dodgerblue">TOS</a>.</p>
-
-    <div class="clearfix">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <button type="submit" class="signupbtn">Sign Up</button>
-    </div>
-  </div>
+     <input type="checkbox" required id="tos">
+	 <label for="tos">I agree to thr TOS</label>  
+	  
+	 <button type="submit" >submit</button>
+    
 </form>
 
-</head>
 
-<body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
